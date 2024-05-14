@@ -482,6 +482,90 @@ async function main() {
       },
     },
   });
+  const user5 = await prisma.member.upsert({
+    where: { name: "Febryan Ganda" },
+    update: {},
+    create: {
+      name: "Febryan Ganda",
+      age: 19,
+      role: "Jungler",
+      about:
+        "Lorem ipsum...",
+      picture: "bryan.jpg",
+      githubLink: "https://github.com/namiro18",
+      instaLink: "https://www.instagram.com/febryan_ganda/",
+      teleLink: "t.me/namiro18",
+      linkedinLink: "https://www.linkedin.com/in/febryan-ganda-namiro-008708291",
+      skills: {
+        create: [
+          {
+            skill: {
+              connectOrCreate: {
+                where: {
+                  name: "mysql",
+                },
+                create: {
+                  name: "mysql",
+                },
+              },
+            },
+          },
+          {
+            skill: {
+              connectOrCreate: {
+                where: {
+                  name: "cisco",
+                },
+                create: {
+                  name: "cisco",
+                },
+              },
+            },
+          },
+        ],
+      },
+      interest: {
+        create: [
+          {
+            interest: {
+              connectOrCreate: {
+                where: {
+                  name: "Music",
+                },
+                create: {
+                  name: "Music",
+                },
+              },
+            },
+          },
+          {
+            interest: {
+              connectOrCreate: {
+                where: {
+                  name: "Technology",
+                },
+                create: {
+                  name: "Technology",
+                },
+              },
+            },
+          },
+          {
+            interest: {
+              connectOrCreate: {
+                where: {
+                  name: "Gaming",
+                },
+                create: {
+                  name: "Gaming",
+                },
+              },
+            },
+          },
+        ],
+      },
+    },
+  });
 }
 
 main()
