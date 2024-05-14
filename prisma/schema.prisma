@@ -1,0 +1,59 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+  binaryTargets = ["native", "linux-musl-openssl-3.0.x"]
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Member {
+  id            Int       @id @default(autoincrement())
+  name          String    @db.VarChar(100) @unique
+  age           Int
+  role          String    @db.VarChar(100)
+  about         String    @db.LongText
+  githubLink    String    @db.VarChar(255)
+  linkedinLink  String    @db.VarChar(255)
+  teleLink      String    @db.VarChar(255)
+  instaLink     String    @db.VarChar(255)
+  skills        MemberSkill[]
+  interest      MemberInterest[]
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+}
+
+model Skill {
+  id      Int     @id @default(autoincrement())
+  name    String  @db.VarChar(30) @unique
+  members MemberSkill[]
+}
+
+model Interest {
+  id      Int     @id @default(autoincrement())
+  name    String  @db.VarChar(30) @unique
+  members MemberInterest[]
+}
+
+model MemberSkill {
+  member    Member  @relation(fields: [memberId], references: [id])
+  memberId  Int
+  skill     Skill   @relation(fields: [skillId], references: [id])
+  skillId   Int
+  @@id([memberId, skillId])
+}
+
+model MemberInterest {
+  member      Member    @relation(fields: [memberId], references: [id])
+  memberId    Int
+  interest    Interest  @relation(fields: [interestId], references: [id])
+  interestId  Int
+  @@id([memberId, interestId])
+}

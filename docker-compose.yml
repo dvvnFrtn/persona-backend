@@ -1,0 +1,33 @@
+version: '3'
+services:
+  db:
+    image: mysql
+    container_name: persona-db
+    restart: always
+    ports:
+      - '3306:3306'
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: persona-team
+    networks:
+      - be-network
+
+  app:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: persona-server-app
+    restart: always
+    ports:
+      - '4000:3000'
+    volumes:
+      - .:/app
+      - /app/node_modules
+    networks:
+      - be-network
+    depends_on:
+      - db
+
+networks:
+  be-network:
+    driver: bridge
