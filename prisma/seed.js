@@ -383,7 +383,7 @@ async function main() {
       role: "Backend-Dev",
       about:
         "Hello, World. I believe in my skill",
-      picture: "adhim.jng",
+      picture: "adhim.jpg",
       githubLink: "https://github.com/NaufalAddMe",
       instaLink: "https://www.instagram.com/naufal.adhim/",
       teleLink: "t.me/nalu",
