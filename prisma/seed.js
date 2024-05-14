@@ -242,6 +242,138 @@ async function main() {
       },
     },
   });
+  const user3 = await prisma.member.upsert({
+    where: { name: "Muhammad Allam Zaahid" },
+    update: {},
+    create: {
+      name: "Muhammad Allam Zaahid",
+      age: 19,
+      role: "Cloud-Engineer",
+      about:
+        "Hello! With a deep fascination for cloud technologies, I am dedicated to exploring the limitless possibilities that cloud computing offers. Join me on a journey where innovation meets dedication. Whether you're a fellow tech enthusiast or just curious about cloud technologies, I hope to provide valuable content and inspire others to embrace the future of IT.",
+      picture: "allam.jpg",
+      githubLink: "https://github.com/allamzaahid1",
+      instaLink: "https://www.instagram.com/hamiaski",
+      teleLink: "t.me/hamiaski",
+      linkedinLink: "https://www.linkedin.com/in/allamzaahid/",
+      skills: {
+        create: [
+          {
+            skill: {
+              connectOrCreate: {
+                where: {
+                  name: "arduino",
+                },
+                create: {
+                  name: "arduino",
+                },
+              },
+            },
+          },
+          {
+            skill: {
+              connectOrCreate: {
+                where: {
+                  name: "mysql",
+                },
+                create: {
+                  name: "mysql",
+                },
+              },
+            },
+          },
+          {
+            skill: {
+              connectOrCreate: {
+                where: {
+                  name: "java",
+                },
+                create: {
+                  name: "java",
+                },
+              },
+            },
+          },
+          {
+            skill: {
+              connectOrCreate: {
+                where: {
+                  name: "csp",
+                },
+                create: {
+                  name: "csp",
+                },
+              },
+            },
+          },
+          {
+            skill: {
+              connectOrCreate: {
+                where: {
+                  name: "premiere",
+                },
+                create: {
+                  name: "premiere",
+                },
+              },
+            },
+          },
+        ],
+      },
+      interest: {
+        create: [
+          {
+            interest: {
+              connectOrCreate: {
+                where: {
+                  name: "Drawing",
+                },
+                create: {
+                  name: "Drawing",
+                },
+              },
+            },
+          },
+          {
+            interest: {
+              connectOrCreate: {
+                where: {
+                  name: "Technology",
+                },
+                create: {
+                  name: "Technology",
+                },
+              },
+            },
+          },
+          {
+            interest: {
+              connectOrCreate: {
+                where: {
+                  name: "Gaming",
+                },
+                create: {
+                  name: "Gaming",
+                },
+              },
+            },
+          },
+          {
+            interest: {
+              connectOrCreate: {
+                where: {
+                  name: "Swimming",
+                },
+                create: {
+                  name: "Swimming",
+                },
+              },
+            },
+          },
+        ],
+      },
+    },
+  });
 }
 
 main()
