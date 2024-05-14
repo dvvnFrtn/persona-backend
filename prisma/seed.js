@@ -243,10 +243,10 @@ async function main() {
     },
   });
   const user3 = await prisma.member.upsert({
-    where: { name: "Muhammad Allam Zaahid" },
+    where: { name: "Allam Zaahid" },
     update: {},
     create: {
-      name: "Muhammad Allam Zaahid",
+      name: "Allam Zaahid",
       age: 19,
       role: "Cloud-Engineer",
       about:
