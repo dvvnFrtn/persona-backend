@@ -374,6 +374,114 @@ async function main() {
       },
     },
   });
+  const user4 = await prisma.member.upsert({
+    where: { name: "Naufal Adhim" },
+    update: {},
+    create: {
+      name: "Naufal Adhim",
+      age: 19,
+      role: "Backend-Dev",
+      about:
+        "Hello, World. I believe in my skill",
+      picture: "adhim.jng",
+      githubLink: "https://github.com/NaufalAddMe",
+      instaLink: "https://www.instagram.com/naufal.adhim/",
+      teleLink: "t.me/nalu",
+      linkedinLink: "https://www.linkedin.com/in/nalu/",
+      skills: {
+        create: [
+          {
+            skill: {
+              connectOrCreate: {
+                where: {
+                  name: "java",
+                },
+                create: {
+                  name: "java",
+                },
+              },
+            },
+          },
+          {
+            skill: {
+              connectOrCreate: {
+                where: {
+                  name: "cisco",
+                },
+                create: {
+                  name: "cisco",
+                },
+              },
+            },
+          },
+          {
+            skill: {
+              connectOrCreate: {
+                where: {
+                  name: "lightroom",
+                },
+                create: {
+                  name: "lightroom",
+                },
+              },
+            },
+          },
+          {
+            skill: {
+              connectOrCreate: {
+                where: {
+                  name: "figma",
+                },
+                create: {
+                  name: "figma",
+                },
+              },
+            },
+          },
+        ],
+      },
+      interest: {
+        create: [
+          {
+            interest: {
+              connectOrCreate: {
+                where: {
+                  name: "Music",
+                },
+                create: {
+                  name: "Music",
+                },
+              },
+            },
+          },
+          {
+            interest: {
+              connectOrCreate: {
+                where: {
+                  name: "Automotive",
+                },
+                create: {
+                  name: "Automotive",
+                },
+              },
+            },
+          },
+          {
+            interest: {
+              connectOrCreate: {
+                where: {
+                  name: "Gaming",
+                },
+                create: {
+                  name: "Gaming",
+                },
+              },
+            },
+          },
+        ],
+      },
+    },
+  });
 }
 
 main()
