@@ -20,6 +20,7 @@ model Member {
   age           Int
   role          String    @db.VarChar(100)
   about         String    @db.LongText
+  picture       String    @db.VarChar(255)
   githubLink    String    @db.VarChar(255)
   linkedinLink  String    @db.VarChar(255)
   teleLink      String    @db.VarChar(255)

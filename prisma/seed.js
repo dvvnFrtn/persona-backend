@@ -10,6 +10,7 @@ async function main() {
       age: 19,
       role: 'Backend-Dev',
       about: 'Hello, I\'m a technology enthusiast and a current undergraduate student majoring in Information Technology. My passion lies in backend development, where I enjoy unraveling the complexities of technology and continuously learning new concepts and technologies.',
+      picture: 'rizki.png',
       githubLink: 'https://github.com/dvvnFrtn',
       instaLink: 'https://www.instagram.com/rzkifj_/',
       teleLink: 't.me/rzkiifj',

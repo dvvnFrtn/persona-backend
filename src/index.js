@@ -7,8 +7,8 @@ const port = 3000;
 
 app.use(memberRouter);
 
-app.get('/api/members/:id/profile', (req, res) => {
-    let filePath = "./img/A-58.jpg";
+app.get('/api/members/pic/:img', (req, res) => {
+    let filePath = "./img/" + req.params.img;
     let resolvedPath = path.resolve(filePath);
     res.sendFile(resolvedPath);
 });

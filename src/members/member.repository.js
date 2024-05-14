@@ -6,7 +6,8 @@ const findAll = async () => {
             select: {
                 id: true,
                 name: true,
-                role: true
+                role: true,
+                picture: true
             }
         });
     } catch (err) {
@@ -25,6 +26,7 @@ const findById = async (id) => {
                 role: true,
                 age: true,
                 about: true,
+                picture: true,
                 skills: { select: { skill: true }},
                 interest: { select: { interest: true }}
             },
