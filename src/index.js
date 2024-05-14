@@ -1,10 +1,12 @@
 const express = require('express');
 const path = require('path');
+const cors = require('cors');
 
 const { memberRouter } = require('./members/member.router');
 const app = express();
 const port = 3000;
 
+app.use(cors());
 app.use(memberRouter);
 
 app.get('/api/members/pic/:img', (req, res) => {
