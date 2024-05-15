@@ -356,7 +356,7 @@ async function main() {
     create: {
       name: "Naufal Adhim",
       age: 19,
-      role: "Backend-Dev",
+      role: "Network-Engineer",
       about:
         "Hello, World. I believe in my skill",
       picture: "adhim.jpg",
@@ -566,6 +566,115 @@ async function main() {
       },
     },
   });
+  const user6 = await prisma.member.upsert({
+    where: { name: "Zawawi Nur" },
+    update: {},
+    create: {
+      name: "Zawawi Nur",
+      age: 20,
+      role: "Product-Manager",
+      about:
+        "lorem ipsum sir dolor e ahmed yakusa...",
+      picture: "zaw.jpeg",
+      githubLink: "https://github.com/Zawnr",
+      instaLink: "https://www.instagram.com/zawawi_nur/",
+      teleLink: "t.me/namiro18",
+      linkedinLink: "https://www.linkedin.com/in/nur-rochmat-zawawi-a553b81ab/",
+      skills: {
+        create: [
+          {
+            skill: {
+              connectOrCreate: {
+                where: {
+                  name: "golang",
+                },
+                create: {
+                  name: "golang",
+                },
+              },
+            },
+          },
+          {
+            skill: {
+              connectOrCreate: {
+                where: {
+                  name: "laravel",
+                },
+                create: {
+                  name: "laravel",
+                },
+              },
+            },
+          },
+          {
+            skill: {
+              connectOrCreate: {
+                where: {
+                  name: "nodejs",
+                },
+                create: {
+                  name: "nodejs",
+                },
+              },
+            },
+          },
+          {
+            skill: {
+              connectOrCreate: {
+                where: {
+                  name: "docker",
+                },
+                create: {
+                  name: "docker",
+                },
+              },
+            },
+          },
+        ],
+      },
+      interest: {
+        create: [
+          {
+            interest: {
+              connectOrCreate: {
+                where: {
+                  name: "Money",
+                },
+                create: {
+                  name: "Money",
+                },
+              },
+            },
+          },
+          {
+            interest: {
+              connectOrCreate: {
+                where: {
+                  name: "Technology",
+                },
+                create: {
+                  name: "Technology",
+                },
+              },
+            },
+          },
+          {
+            interest: {
+              connectOrCreate: {
+                where: {
+                  name: "Gaming",
+                },
+                create: {
+                  name: "Gaming",
+                },
+              },
+            },
+          },
+        ],
+      },
+    },
+  });
+
 }
 
 main()
