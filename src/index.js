@@ -17,11 +17,13 @@ app.use((req, res, next) => {
 
 app.use(memberRouter);
 
-app.get('/api/members/pic/:img', (req, res) => {
-    let filePath = "./img/" + req.params.img;
-    let resolvedPath = path.resolve(filePath);
-    res.sendFile(resolvedPath);
-});
+// app.get('/api/members/pic/:img', (req, res) => {
+//     let filePath = "./img/" + req.params.img;
+//     let resolvedPath = path.resolve(filePath);
+//     res.sendFile(resolvedPath);
+// });
+
+app.use('/api/members/pic', express.static('img'));
 
 app.listen(port, () => {
     console.log(`Server running on port ${port}`);
