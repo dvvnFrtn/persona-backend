@@ -27,6 +27,10 @@ const findById = async (id) => {
                 age: true,
                 about: true,
                 picture: true,
+                githubLink: true,
+                linkedinLink: true,
+                teleLink: true,
+                instaLink: true,
                 skills: { select: { skill: true }},
                 interest: { select: { interest: true }}
             },
