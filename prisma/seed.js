@@ -130,10 +130,10 @@ async function main() {
             skill: {
               connectOrCreate: {
                 where: {
-                  name: "figma",
+                  name: "golang",
                 },
                 create: {
-                  name: "figma",
+                  name: "golang",
                 },
               },
             },
@@ -170,18 +170,6 @@ async function main() {
                 },
                 create: {
                   name: "docker",
-                },
-              },
-            },
-          },
-          {
-            skill: {
-              connectOrCreate: {
-                where: {
-                  name: "reactjs",
-                },
-                create: {
-                  name: "reactjs",
                 },
               },
             },
@@ -262,10 +250,10 @@ async function main() {
             skill: {
               connectOrCreate: {
                 where: {
-                  name: "arduino",
+                  name: "golang",
                 },
                 create: {
-                  name: "arduino",
+                  name: "golang",
                 },
               },
             },
@@ -274,10 +262,10 @@ async function main() {
             skill: {
               connectOrCreate: {
                 where: {
-                  name: "mysql",
+                  name: "laravel",
                 },
                 create: {
-                  name: "mysql",
+                  name: "laravel",
                 },
               },
             },
@@ -286,10 +274,10 @@ async function main() {
             skill: {
               connectOrCreate: {
                 where: {
-                  name: "java",
+                  name: "nodejs",
                 },
                 create: {
-                  name: "java",
+                  name: "nodejs",
                 },
               },
             },
@@ -298,22 +286,10 @@ async function main() {
             skill: {
               connectOrCreate: {
                 where: {
-                  name: "csp",
+                  name: "docker",
                 },
                 create: {
-                  name: "csp",
-                },
-              },
-            },
-          },
-          {
-            skill: {
-              connectOrCreate: {
-                where: {
-                  name: "premiere",
-                },
-                create: {
-                  name: "premiere",
+                  name: "docker",
                 },
               },
             },
@@ -394,10 +370,10 @@ async function main() {
             skill: {
               connectOrCreate: {
                 where: {
-                  name: "java",
+                  name: "golang",
                 },
                 create: {
-                  name: "java",
+                  name: "golang",
                 },
               },
             },
@@ -406,10 +382,10 @@ async function main() {
             skill: {
               connectOrCreate: {
                 where: {
-                  name: "cisco",
+                  name: "laravel",
                 },
                 create: {
-                  name: "cisco",
+                  name: "laravel",
                 },
               },
             },
@@ -418,10 +394,10 @@ async function main() {
             skill: {
               connectOrCreate: {
                 where: {
-                  name: "lightroom",
+                  name: "nodejs",
                 },
                 create: {
-                  name: "lightroom",
+                  name: "nodejs",
                 },
               },
             },
@@ -430,10 +406,10 @@ async function main() {
             skill: {
               connectOrCreate: {
                 where: {
-                  name: "figma",
+                  name: "docker",
                 },
                 create: {
-                  name: "figma",
+                  name: "docker",
                 },
               },
             },
@@ -502,10 +478,10 @@ async function main() {
             skill: {
               connectOrCreate: {
                 where: {
-                  name: "mysql",
+                  name: "golang",
                 },
                 create: {
-                  name: "mysql",
+                  name: "golang",
                 },
               },
             },
@@ -514,10 +490,34 @@ async function main() {
             skill: {
               connectOrCreate: {
                 where: {
-                  name: "cisco",
+                  name: "laravel",
                 },
                 create: {
-                  name: "cisco",
+                  name: "laravel",
+                },
+              },
+            },
+          },
+          {
+            skill: {
+              connectOrCreate: {
+                where: {
+                  name: "nodejs",
+                },
+                create: {
+                  name: "nodejs",
+                },
+              },
+            },
+          },
+          {
+            skill: {
+              connectOrCreate: {
+                where: {
+                  name: "docker",
+                },
+                create: {
+                  name: "docker",
                 },
               },
             },
