@@ -1,0 +1,80 @@
+[
+    {
+        "name": "Rizki Fajar",
+        "age": 19,
+        "role": "Backend-Dev",
+        "about": "Hello, I'm a technology enthusiast and a current undergraduate student majoring in Information Technology. My passion lies in backend development, where I enjoy unraveling the complexities of technology and continuously learning new concepts and technologies.",
+        "picture": "rizki.png",
+        "githubLink": "https://github.com/dvvnFrtn",
+        "linkedinLink": "https://www.linkedin.com/in/rizkifj/",
+        "teleLink": "https://t.me/rzkiifj",
+        "instaLink": "https://www.instagram.com/rzkifj_/",
+        "skills": ["nodejs", "golang", "docker", "laravel"],
+        "interests": ["Technology", "Music", "Gaming"]
+    },
+    {
+        "name": "Allam Zaahid",
+        "age": 19,
+        "role": "Cloud-Engineer",
+        "about": "Hello! With a deep fascination for cloud technologies, I am dedicated to exploring the limitless possibilities that cloud computing offers. Join me on a journey where innovation meets dedication. Whether you're a fellow tech enthusiast or just curious about cloud technologies, I hope to provide valuable content and inspire others to embrace the future of IT.",
+        "picture": "allam.jpg",
+        "githubLink": "https://github.com/allamzaahid1",
+        "linkedinLink": "https://www.linkedin.com/in/allamzaahid/",
+        "teleLink": "https://t.me/hamiaski",
+        "instaLink": "https://www.instagram.com/hamiaski/",
+        "skills": ["nodejs", "golang", "docker", "laravel"],
+        "interests": ["Technology", "Drawing", "Gaming", "Swimming"]
+    },
+    {
+        "name": "Azraf Azizullah",
+        "age": 19,
+        "role": "Devs-Op",
+        "about": "As a seasoned DevOps Engineer with a passion for exploration, I bring over a decade of IT expertise to the table. Join me on a journey where technology meets wanderlust. Explore insights, tips, and experiences melding the worlds of IT and travel, curated through years of hands-on involvement in the tech industry. Let's embark on this digital voyage together!",
+        "picture": "azraf.jpg",
+        "githubLink": "https://github.com/azrappp",
+        "linkedinLink": "https://www.linkedin.com/in/azrafazizullah/",
+        "teleLink": "https://t.me/azrafazizullah",
+        "instaLink": "https://www.instagram.com/azrafazizullah_/",
+        "skills": ["nodejs", "golang", "docker", "laravel"],
+        "interests": ["Technology", "Hiking", "Gaming", "Swimming"]
+    },
+    {
+        "name": "Zawawi Nur",
+        "age": 25,
+        "role": "Frontend-Dev",
+        "about": "Hello! I'm a Frontend Developer, passionate about crafting engaging user experiences and bringing designs to life on the web. With expertise in HTML, CSS, and JavaScript, I thrive on creating visually appealing interfaces that are both functional and intuitive. Continuously learning and adapting to new technologies, I enjoy collaborating with design and backend teams to deliver seamless digital experiences for users across various platforms. Let's build something amazing together!",
+        "picture": "zaw.jpeg",
+        "githubLink": "https://github.com/Zawnr",
+        "linkedinLink": "https://www.linkedin.com/in/nur-rochmat-zawawi-a553b81ab/",
+        "teleLink": "https://t.me/namiro18",
+        "instaLink": "https://www.instagram.com/zawawi_nur/",
+        "skills": ["nodejs", "golang", "docker", "laravel"],
+        "interests": ["Fitness", "Girls", "Swimming"]
+    },
+    {
+        "name": "Febryan Ganda",
+        "age": 19,
+        "role": "Frontend-Dev",
+        "about": "Hello! I'm a Frontend Developer, passionate about crafting engaging user experiences and bringing designs to life on the web. With expertise in HTML, CSS, and JavaScript, I thrive on creating visually appealing interfaces that are both functional and intuitive. Continuously learning and adapting to new technologies, I enjoy collaborating with design and backend teams to deliver seamless digital experiences for users across various platforms. Let's build something amazing together!",
+        "picture": "bryan.jpg",
+        "githubLink": "https://github.com/namiro18",
+        "linkedinLink": "https://www.linkedin.com/in/febryan-ganda-namiro-008708291/",
+        "teleLink": "https://t.me/namiro18",
+        "instaLink": "https://www.instagram.com/febryan_ganda/",
+        "skills": ["nodejs", "golang", "docker", "laravel"],
+        "interests": ["Fitness", "Gaming", "Carrying Teams"]
+    },
+    {
+        "name": "Naufal Adhim",
+        "age": 19,
+        "role": "Devs-Op",
+        "about": "Hi, I'm a DevOps enthusiast with a passion for streamlining software development processes and enhancing collaboration between development and operations teams. With a background in both software engineering and system administration, I excel in automating deployment pipelines, managing infrastructure as code, and implementing continuous integration and delivery practices. I thrive in dynamic environments where I can leverage cutting-edge technologies to optimize efficiency, reliability, and scalability of complex systems, ultimately driving the success of software projects.",
+        "picture": "adhim.jpg",
+        "githubLink": "https://github.com/NaufalAddMe",
+        "linkedinLink": "https://www.linkedin.com/in/nalu/",
+        "teleLink": "https://t.me/nalu",
+        "instaLink": "https://www.instagram.com/naufal.adhim/",
+        "skills": ["nodejs", "golang", "docker", "laravel"],
+        "interests": ["Foodies", "Gaming", "Automotive"]
+    }
+]
