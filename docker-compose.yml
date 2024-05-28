@@ -18,6 +18,8 @@ services:
       dockerfile: Dockerfile
     container_name: persona-server-app
     restart: always
+    environment:
+      DATABASE_URL:
     ports:
       - '4000:3000'
     volumes:
