@@ -1,0 +1,1 @@
+sudo docker run -p 4000:3000 -e DATABASE_URL="mysql://root:root@persona-db:3306/persona-team" --network persona-backend_be-network test-besudo docker run -p 4000:3000 -e DATABASE_URL="mysql://root:root@persona-db:3306/persona-team" --network persona-backend_be-network test-be

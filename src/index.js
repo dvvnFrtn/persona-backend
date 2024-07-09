@@ -28,3 +28,5 @@ app.use('/api/members/pic', express.static('img'));
 app.listen(port, () => {
     console.log(`Server running on port ${port}`);
 });
+
+//test git push

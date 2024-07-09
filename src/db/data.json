@@ -76,5 +76,44 @@
         "instaLink": "https://www.instagram.com/naufal.adhim/",
         "skills": ["nodejs", "golang", "docker", "laravel"],
         "interests": ["Foodies", "Gaming", "Automotive"]
+    },
+    {
+        "name": "Diyyas Ilyasa",
+        "age": 19,
+        "role": "Devs-Op",
+        "about": "Hi, I'm a DevOps enthusiast with a passion for streamlining software development processes and enhancing collaboration between development and operations teams. With a background in both software engineering and system administration, I excel in automating deployment pipelines, managing infrastructure as code, and implementing continuous integration and delivery practices. I thrive in dynamic environments where I can leverage cutting-edge technologies to optimize efficiency, reliability, and scalability of complex systems, ultimately driving the success of software projects.",
+        "picture": "ilyas.png",
+        "githubLink": "https://github.com/NaufalAddMe",
+        "linkedinLink": "https://www.linkedin.com/in/nalu/",
+        "teleLink": "https://t.me/nalu",
+        "instaLink": "https://www.instagram.com/naufal.adhim/",
+        "skills": ["nodejs", "golang", "docker", "laravel"],
+        "interests": ["Foodies", "Gaming", "Automotive"]
+    },
+    {
+        "name": "Ahmed Hibatillah",
+        "age": 19,
+        "role": "Devs-Op",
+        "about": "Hi, I'm a DevOps enthusiast with a passion for streamlining software development processes and enhancing collaboration between development and operations teams. With a background in both software engineering and system administration, I excel in automating deployment pipelines, managing infrastructure as code, and implementing continuous integration and delivery practices. I thrive in dynamic environments where I can leverage cutting-edge technologies to optimize efficiency, reliability, and scalability of complex systems, ultimately driving the success of software projects.",
+        "picture": "ahmed.png",
+        "githubLink": "https://github.com/NaufalAddMe",
+        "linkedinLink": "https://www.linkedin.com/in/nalu/",
+        "teleLink": "https://t.me/nalu",
+        "instaLink": "https://www.instagram.com/naufal.adhim/",
+        "skills": ["nodejs", "golang", "docker", "laravel"],
+        "interests": ["Foodies", "Gaming", "Automotive"]
+    },
+    {
+        "name": "Ikzaaz Abd",
+        "age": 19,
+        "role": "Devs-Op",
+        "about": "Hi, I'm a DevOps enthusiast with a passion for streamlining software development processes and enhancing collaboration between development and operations teams. With a background in both software engineering and system administration, I excel in automating deployment pipelines, managing infrastructure as code, and implementing continuous integration and delivery practices. I thrive in dynamic environments where I can leverage cutting-edge technologies to optimize efficiency, reliability, and scalability of complex systems, ultimately driving the success of software projects.",
+        "picture": "ikzaz.png",
+        "githubLink": "https://github.com/NaufalAddMe",
+        "linkedinLink": "https://www.linkedin.com/in/nalu/",
+        "teleLink": "https://t.me/nalu",
+        "instaLink": "https://www.instagram.com/naufal.adhim/",
+        "skills": ["nodejs", "golang", "docker", "laravel"],
+        "interests": ["Foodies", "Gaming", "Automotive"]
     }
 ]
